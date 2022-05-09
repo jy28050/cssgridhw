@@ -1,0 +1,43 @@
+
+body {
+   background-color: whitesmoke;
+}
+
+.container {
+   height: 100%;
+   display:grid;
+   grid-template-columns: repeat(12, 1fr);
+   grid-template-rows: 40px 200px 40px;
+   gap: 6px;
+   font-family: fantasy;
+   grid-template-areas: 
+   ". h h h h h h h h h h ."
+   "m c c c c c c c c c c c"
+   ". f f f f f f f f f f ."
+   ;
+   
+   
+}
+
+.header {
+   background-color: yellow;
+   grid-area: h;
+   
+}
+
+.menu {
+   background-color: aqua;
+   grid-area: m;
+}
+
+
+.content {
+   background-color: rgb(0, 162, 255);
+   grid-area: c;
+}
+
+
+.footer {
+   background-color: orange;
+   grid-area: f;
+}
